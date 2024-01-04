@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="Content/site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    
+
+    <div class="container">
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Mesajlar</h3>
+                <hr />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <table class="table table-condensed table-striped table-hover text-center">
+
+                    <thead>
+                        <tr>
+                            <!--th*4>{kolon adı}-->
+                            <th class="text-center">Tarih</th>
+                            <th class="text-center">Kimden</th>
+                            <th class="text-center">Konu</th>
+                            <th class="text-center"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <!--tr*4>(td>{XX.XX.2023})+(td>{ayanabbasova})+(td>lorem3)+(td>button[class="btn btn-info btn-xs"]>span[class="glyphicon glyphicon-eye-open"]^button[class="btn btn-danger btn-xs"]>span[class="glyphicon glyphicon-trash"])-->
+
+                        <tr>
+                            <td>XX.XX.2023</td>
+                            <td>ayanabbasova</td>
+                            <td>
+                                Ürün hakkında
+                            </td>
+                            <td>
+                                <button class="btn btn-info btn-xs">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                                <button class="btn btn-danger btn-xs">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>XX.XX.2023</td>
+                            <td>ayanabbasova</td>
+                            <td>
+                                Ürün hakkında
+                            </td>
+                            <td>
+                                <button class="btn btn-info btn-xs">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                                <button class="btn btn-danger btn-xs">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>XX.XX.2023</td>
+                            <td>ayanabbasova</td>
+                            <td>
+                                Ürün hakkında
+                            </td>
+                            <td>
+                                <button class="btn btn-info btn-xs">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                                <button class="btn btn-danger btn-xs">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>XX.XX.2023</td>
+                            <td>ayanabbasova</td>
+                            <td>
+                                Ürün hakkında
+                            </td>
+                            <td>
+                                <button class="btn btn-info btn-xs">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                                <button class="btn btn-danger btn-xs">
+                                    <span class="glyphicon glyphicon-trash"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" class="text-right">
+                                <br /><br />
+                                <a href="#" data-toggle="modal" data-target="#messagebox" class="btn btn-success btn-sm">
+                                    <span class="glyphicon glyphicon-plus"></span> Yeni Mesaj
+                                </a>
+                            </td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+
+            </div>
+        </div>
+
+        <div class="modal fade" id="messagebox" tabindex="-1" role="dialog" aria-labelledby="messagebox-label">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="messagebox-label">Yeni Mesaj</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <div>
+                                <select class="form-control valid" id="messageto" name="messageto">
+                                    <option value="14">Genel</option>
+                                    <option value="15">Ürün Hakkında</option>
+                                    <option value="16">Sipariş Hakkında</option>
+                                </select>
+                                <span class="field-validation-valid text-danger" data-valmsg-for="messageto" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="messagesubject" id="messagesubject" placeholder="Subject" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <textarea cols="30" rows="5" name="messagebody" id="messagebody" placeholder="Message Text" class="form-control"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                        <button type="button" class="btn btn-success" data-dismiss="modal">
+                            <span class="glyphicon glyphicon-send"></span> Send
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
